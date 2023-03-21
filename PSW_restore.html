@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Відновлення пароля</title>
+  <link rel="icon" type="image/x-icon" href="images/Favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1,
+    shrink-to-fit=no, minimal-ui">
+  <style>
+    /* Стилі для форми відновлення пароля */
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+    }
+    input[type="email"], input[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-bottom: 16px;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    /* Стилі для заголовка */
+    h1 {
+      text-align: center;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+<h1>Відновлення пароля</h1>
+<form action="reset_password.php" method="post">
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+  <input type="submit" value="Відновити пароль">
+</form>
+</body>
+</html>
